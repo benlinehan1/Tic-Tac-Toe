@@ -38,9 +38,6 @@ player1NameBtn.addEventListener('click', player1Insert)
 
 player2NameBtn.addEventListener('click', player2Insert)
 
-
-
-
 function player1Insert() {
    pushName1 = player1Name
 
