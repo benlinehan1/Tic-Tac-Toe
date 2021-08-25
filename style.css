@@ -1,0 +1,48 @@
+* {
+    border: 1px solid red;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr; 
+    width: 600px;
+    height: 600px;
+    
+}
+
+.first-section {
+    border-right: 5px solid pink;
+    border-bottom: 5px solid pink;
+}
+
+.second-section {
+    border-bottom: 5px solid pink;
+    border-right: 5px solid pink;
+}
+
+.third-section {
+    border-bottom: 5px solid pink;
+}
+
+.fourth-section {
+    border-right: 5px solid pink;
+    border-bottom: 5px solid pink;
+}
+
+.fifth-section {
+    border-right: 5px solid pink;
+    border-bottom: 5px solid pink;
+}
+
+.sixth-section {
+    border-bottom: 5px solid pink;
+}
+
+.seventh-section {
+    border-right: 5px solid pink;
+}
+
+.eighth-section {
+    border-right: 5px solid pink;
+}
+
