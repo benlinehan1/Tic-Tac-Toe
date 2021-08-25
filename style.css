@@ -1,48 +1,96 @@
 * {
-    border: 1px solid red;
+    box-sizing: border-box;
+}
+
+header {
+   background-color: rgb(236, 72, 127); 
+   box-shadow: rgb(221, 178, 221);
+   font-family: 'Great Vibes', cursive;
+   text-align: center;
+}
+
+body {
+    background-color: rgb(248, 226, 229);
+}
+
+img {
+    width: 60%;
 }
 
 .board {
     display: grid;
-    grid-template-columns: 3fr 3fr 3fr; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr;
     width: 600px;
     height: 600px;
-    
+    margin: 0 auto;
+}
+
+.title {
+    text-align: center;
 }
 
 .first-section {
     border-right: 5px solid pink;
     border-bottom: 5px solid pink;
+    border-left: 5px solid rgb(236, 72, 127);
+    border-top: 5px solid rgb(236, 72, 127);
+    background-size: cover;
 }
 
 .second-section {
     border-bottom: 5px solid pink;
     border-right: 5px solid pink;
+    border-top: 5px solid rgb(236, 72, 127);
+    background-size: cover;
 }
 
 .third-section {
     border-bottom: 5px solid pink;
+    border-top: 5px solid rgb(236, 72, 127);
+    border-right: 5px solid rgb(236, 72, 127);
+    background-size: cover;
 }
 
 .fourth-section {
     border-right: 5px solid pink;
     border-bottom: 5px solid pink;
+    border-left: 5px solid rgb(236, 72, 127);
+    background-size: cover;
 }
 
 .fifth-section {
     border-right: 5px solid pink;
     border-bottom: 5px solid pink;
+    background-size: cover;
 }
 
 .sixth-section {
     border-bottom: 5px solid pink;
+    border-right: 5px solid rgb(236, 72, 127);
+    background-size: cover;
 }
 
 .seventh-section {
     border-right: 5px solid pink;
+    border-left: 5px solid rgb(236, 72, 127);
+    border-bottom: 5px solid rgb(236, 72, 127);
+    background-size: cover;
 }
 
 .eighth-section {
     border-right: 5px solid pink;
+    border-bottom: 5px solid rgb(236, 72, 127);
+    background-size: cover;
 }
 
+.ninth-section {
+    background-size: cover;
+    border-right: 5px solid rgb(236, 72, 127);
+    border-bottom: 5px solid rgb(236, 72, 127);
+}
+
+.player-info {
+    text-align: center;
+    background-size: cover;
+}
