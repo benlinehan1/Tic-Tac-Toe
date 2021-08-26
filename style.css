@@ -7,10 +7,13 @@ header {
    background-color: rgb(236, 72, 127); 
    box-shadow: rgb(221, 178, 221);
    font-family: 'Great Vibes', cursive;
+   margin-top: 0;
 }
 
 .title {
     text-align: center;
+    margin-top: 0;
+    padding-top: 10px;
 }
 
 .text-dec-p1 {
@@ -24,6 +27,7 @@ header {
 
 body {
     background-color: rgb(248, 226, 229);
+    margin: 0;
 }
 
 img {

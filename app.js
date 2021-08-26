@@ -17,24 +17,36 @@ var winnerDeclaration = document.querySelector('.winner')
 
 var roundCounter = document.querySelector('.round-counter')
 
+var firstImage = "url(\"https://pbs.twimg.com/media/Dsojx8yUUAADWUm.jpg\")"
+
+var secondImage = "url(\"https://64.media.tumblr.com/15b5c36e66c657c6cc58c12e69fddc88/ce07956bd752e8f3-0d/s640x960/0f3a5955c8aee87bf5d63cbbb9633544e4f9ffa4.jpg\")"
+
+var playerWon = false
+
+var playerTurnCounter = 0
+
+var resetBtn = document.querySelector('.reset-btn')
+
+resetBtn.addEventListener('click', resetGame)
+
+
 for (let i = 0; i < ticTacToeClick.length; i++) {
     ticTacToeClick[i].addEventListener('click', crossesClick)
 }
 
-var playerTurnCounter = 0
 
 
 function crossesClick(event) {
 
     if (playerTurnCounter === 0) {
-    event.target.style.backgroundImage = "url(https://pbs.twimg.com/media/Dsojx8yUUAADWUm.jpg)"
+        event.target.style.backgroundImage = "url(https://pbs.twimg.com/media/Dsojx8yUUAADWUm.jpg)"
 
-    playerTurnCounter = playerTurnCounter + 1
+        playerTurnCounter = playerTurnCounter + 1
 
-    roundCounter.textContent = Number(roundCounter.textContent) + 1
+        roundCounter.textContent = Number(roundCounter.textContent) + 1
 
-    gameChecker2()
-    gameDraw()
+        gameChecker2()
+        gameDraw()
     }
     else if (playerTurnCounter === 1) {
         event.target.style.backgroundImage = "url(https://64.media.tumblr.com/15b5c36e66c657c6cc58c12e69fddc88/ce07956bd752e8f3-0d/s640x960/0f3a5955c8aee87bf5d63cbbb9633544e4f9ffa4.jpg)"
@@ -43,8 +55,8 @@ function crossesClick(event) {
 
         roundCounter.textContent = Number(roundCounter.textContent) + 1
 
-    gameChecker()
-    gameDraw()
+        gameChecker()
+        gameDraw()
     }
 
 }
@@ -65,19 +77,13 @@ function player2Insert() {
     player2Input.textContent = pushName2.value
 }
 
-var firstImage = "url(\"https://pbs.twimg.com/media/Dsojx8yUUAADWUm.jpg\")"
-
-var secondImage = "url(\"https://64.media.tumblr.com/15b5c36e66c657c6cc58c12e69fddc88/ce07956bd752e8f3-0d/s640x960/0f3a5955c8aee87bf5d63cbbb9633544e4f9ffa4.jpg\")"
-
-var playerWon = false
-
 
 function gameChecker() {
     if (document.querySelectorAll('.board>div')[1].style.backgroundImage === secondImage && document.querySelectorAll('.board>div')[4].style.backgroundImage === secondImage && document.querySelectorAll('.board>div')[7].style.backgroundImage === secondImage) {
 
-    winnerDeclaration.textContent = "Player 2 is the winner!"
+        winnerDeclaration.textContent = "Player 2 is the winner!"
 
-    playerWon = true
+        playerWon = true
 
     }
      else if(document.querySelectorAll('.board>div')[0].style.backgroundImage === secondImage && document.querySelectorAll('.board>div')[3].style.backgroundImage === secondImage && document.querySelectorAll('.board>div')[6].style.backgroundImage === secondImage) {
@@ -199,9 +205,27 @@ function gameChecker2() {
 function gameDraw() {
 
         if(roundCounter.textContent === '9' && playerWon == false) {
-            winnerDeclaration.textContent = 'The outcome is a draw'
+         winnerDeclaration.textContent = 'The outcome is a draw'
         }
     }
 
 
-// The for loop is used to go through each of the grid divs, the if statement is then used to make sure that they all have photos, if they do it should then check that the playerWon is equal to false. It should then return
+function resetGame() {
+    for(i = 0; i < ticTacToeClick.length; i++) {
+        ticTacToeClick[i].style.backgroundImage = ""
+    }
+
+    roundCounter.textContent = '0'
+
+    player1Input.textContent = ""
+
+    player2Input.textContent = ""
+
+    winnerDeclaration.textContent = ""
+
+    console.log('yuh');
+
+    player1Name.value = ""
+
+    player2Name.value = ""
+}
