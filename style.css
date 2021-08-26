@@ -1,13 +1,26 @@
 * {
     box-sizing: border-box;
+ 
 }
 
 header {
    background-color: rgb(236, 72, 127); 
    box-shadow: rgb(221, 178, 221);
    font-family: 'Great Vibes', cursive;
-   text-align: center;
 }
+
+.title {
+    text-align: center;
+}
+
+.text-dec-p1 {
+    text-align: left;
+}
+
+.text-dec-p2 {
+    text-align: left;
+}
+
 
 body {
     background-color: rgb(248, 226, 229);
@@ -93,4 +106,10 @@ img {
 .player-info {
     text-align: center;
     background-size: cover;
+}
+
+.winner-dec {
+    font-family: 'Great Vibes', cursive;
+   text-align: center;
+
 }

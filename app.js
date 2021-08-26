@@ -13,6 +13,10 @@ var player2Input = document.querySelector('.player-2-name-push')
 
 var ticTacToeClick = document.querySelectorAll('.board>div')
 
+var winnerDeclaration = document.querySelector('.winner')
+
+var roundCounter = document.querySelector('.round-counter')
+
 for (let i = 0; i < ticTacToeClick.length; i++) {
     ticTacToeClick[i].addEventListener('click', crossesClick)
 }
@@ -26,12 +30,23 @@ function crossesClick(event) {
     event.target.style.backgroundImage = "url(https://pbs.twimg.com/media/Dsojx8yUUAADWUm.jpg)"
 
     playerTurnCounter = playerTurnCounter + 1
+
+    roundCounter.textContent = Number(roundCounter.textContent) + 1
+
+    gameChecker2()
+    gameDraw()
     }
     else if (playerTurnCounter === 1) {
         event.target.style.backgroundImage = "url(https://64.media.tumblr.com/15b5c36e66c657c6cc58c12e69fddc88/ce07956bd752e8f3-0d/s640x960/0f3a5955c8aee87bf5d63cbbb9633544e4f9ffa4.jpg)"
 
         playerTurnCounter = playerTurnCounter - 1
+
+        roundCounter.textContent = Number(roundCounter.textContent) + 1
+
+    gameChecker()
+    gameDraw()
     }
+
 }
 
 player1NameBtn.addEventListener('click', player1Insert)
@@ -49,3 +64,144 @@ function player2Insert() {
 
     player2Input.textContent = pushName2.value
 }
+
+var firstImage = "url(\"https://pbs.twimg.com/media/Dsojx8yUUAADWUm.jpg\")"
+
+var secondImage = "url(\"https://64.media.tumblr.com/15b5c36e66c657c6cc58c12e69fddc88/ce07956bd752e8f3-0d/s640x960/0f3a5955c8aee87bf5d63cbbb9633544e4f9ffa4.jpg\")"
+
+var playerWon = false
+
+
+function gameChecker() {
+    if (document.querySelectorAll('.board>div')[1].style.backgroundImage === secondImage && document.querySelectorAll('.board>div')[4].style.backgroundImage === secondImage && document.querySelectorAll('.board>div')[7].style.backgroundImage === secondImage) {
+
+    winnerDeclaration.textContent = "Player 2 is the winner!"
+
+    playerWon = true
+
+    }
+     else if(document.querySelectorAll('.board>div')[0].style.backgroundImage === secondImage && document.querySelectorAll('.board>div')[3].style.backgroundImage === secondImage && document.querySelectorAll('.board>div')[6].style.backgroundImage === secondImage) {
+
+        winnerDeclaration.textContent = "Player 2 is the winner!"
+
+        playerWon = true
+
+    } else if(document.querySelectorAll('.board>div')[2].style.backgroundImage === secondImage && document.querySelectorAll('.board>div')[5].style.backgroundImage === secondImage && document.querySelectorAll('.board>div')[8].style.backgroundImage === secondImage) {
+
+        winnerDeclaration.textContent = "Player 2 is the winner!"
+
+        playerWon = true
+
+    } else if(document.querySelectorAll('.board>div')[0].style.backgroundImage === secondImage && document.querySelectorAll('.board>div')[1].style.backgroundImage === secondImage && document.querySelectorAll('.board>div')[2].style.backgroundImage === secondImage) {
+        
+        winnerDeclaration.textContent = "Player 2 is the winner"
+
+        playerWon = true
+
+    } else if(document.querySelectorAll('.board>div')[2].style.backgroundImage === secondImage && document.querySelectorAll('.board>div')[3].style.backgroundImage === secondImage && document.querySelectorAll('.board>div')[4].style.backgroundImage === secondImage) {
+
+        winnerDeclaration.textContent = "Player 2 is the winner"
+
+        playerWon = true
+
+    } else if(document.querySelectorAll('.board>div')[6].style.backgroundImage === secondImage && document.querySelectorAll('.board>div')[7].style.backgroundImage === secondImage && document.querySelectorAll('.board>div')[8].style.backgroundImage === secondImage) {
+
+        winnerDeclaration.textContent = 'Player 2 is the winner'
+
+        playerWon = true
+
+    } else if(document.querySelectorAll('.board>div')[0].style.backgroundImage === secondImage && document.querySelectorAll('.board>div')[4].style.backgroundImage === secondImage && document.querySelectorAll('.board>div')[8].style.backgroundImage === secondImage) {
+
+        winnerDeclaration.textContent = 'Player 2 is the winner'
+
+        playerWon = true
+
+    } else if(document.querySelectorAll('.board>div')[2].style.backgroundImage === secondImage && document.querySelectorAll('.board>div')[4].style.backgroundImage === secondImage && document.querySelectorAll('.board>div')[6].style.backgroundImage === secondImage) {
+
+        winnerDeclaration.textContent = 'Player 2 is the winner'
+
+        playerWon = true
+
+    }
+ 
+}
+
+function gameChecker2() {
+    if (document.querySelectorAll('.board>div')[1].style.backgroundImage === firstImage && document.querySelectorAll('.board>div')[4].style.backgroundImage === firstImage && document.querySelectorAll('.board>div')[7].style.backgroundImage === firstImage) {
+
+        winnerDeclaration.textContent = 'Player 1 is the winner'
+
+        playerWon = true
+
+    } else if (document.querySelectorAll('.board>div')[0].style.backgroundImage === firstImage && document.querySelectorAll('.board>div')[3].style.backgroundImage === firstImage && document.querySelectorAll('.board>div')[6].style.backgroundImage === firstImage) {
+
+        winnerDeclaration.textContent = 'Player 1 is the winner'
+
+        playerWon = true
+
+    } else if(document.querySelectorAll('.board>div')[2].style.backgroundImage === firstImage && document.querySelectorAll('.board>div')[5].style.backgroundImage === 
+    firstImage && document.querySelectorAll('.board>div')[8].style.backgroundImage === 
+    firstImage) {
+
+        winnerDeclaration.textContent = 'Player 1 is the winner'
+
+        playerWon = true
+
+    } else if(document.querySelectorAll('.board>div')[0].style.backgroundImage === 
+    firstImage && document.querySelectorAll('.board>div')[1].style.backgroundImage === 
+    firstImage && document.querySelectorAll('.board>div')[2].style.backgroundImage === 
+    firstImage) {
+
+        winnerDeclaration.textContent = 'Player 1 is the winner'
+
+        playerWon = true
+
+    } else if(document.querySelectorAll('.board>div')[3].style.backgroundImage === 
+    firstImage && document.querySelectorAll('.board>div')[4].style.backgroundImage === 
+    firstImage && document.querySelectorAll('.board>div')[5].style.backgroundImage === 
+    firstImage) {
+
+        winnerDeclaration.textContent = "Player 1 is the winner"
+
+        playerWon = true
+
+    } else if(document.querySelectorAll('.board>div')[6].style.backgroundImage === 
+    firstImage && document.querySelectorAll('.board>div')[7].style.backgroundImage === 
+    firstImage && document.querySelectorAll('.board>div')[8].style.backgroundImage === 
+    firstImage) {
+
+        winnerDeclaration.textContent = 'Player 1 is the winner'
+
+        playerWon = true
+
+    } else if(document.querySelectorAll('.board>div')[0].style.backgroundImage === 
+    firstImage && document.querySelectorAll('.board>div')[4].style.backgroundImage === 
+    firstImage && document.querySelectorAll('.board>div')[8].style.backgroundImage === 
+    firstImage) {
+
+        winnerDeclaration.textContent = 'Player 1 is the winner'
+
+        playerWon = true
+
+    } else if(document.querySelectorAll('.board>div')[2].style.backgroundImage === 
+    firstImage && document.querySelectorAll('.board>div')[4].style.backgroundImage === 
+    firstImage && document.querySelectorAll('.board>div')[6].style.backgroundImage === 
+    firstImage) {
+
+        winnerDeclaration.textContent = 'Player 1 is the winner'
+
+        playerWon = true
+
+    }
+}
+
+
+function gameDraw() {
+
+        if(roundCounter.textContent === '9' && playerWon == false) {
+            winnerDeclaration.textContent = 'The outcome is a draw'
+        }
+    }
+
+
+// The for loop is used to go through each of the grid divs, the if statement is then used to make sure that they all have photos, if they do it should then check that the playerWon is equal to false. It should then return
