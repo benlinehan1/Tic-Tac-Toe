@@ -113,7 +113,9 @@ function gameChecker() {
 
         playerWon = true
 
-        player2Victory.textContent = player2VictoryCounter + 1
+        player2VictoryCounter = player2VictoryCounter + 1
+
+        player2Victory.textContent = player2VictoryCounter
 
     }
      else if(document.querySelectorAll('.board>div')[0].style.backgroundImage === secondImage && document.querySelectorAll('.board>div')[3].style.backgroundImage === secondImage && document.querySelectorAll('.board>div')[6].style.backgroundImage === secondImage) {
@@ -122,7 +124,9 @@ function gameChecker() {
 
         playerWon = true
 
-        player2Victory.textContent = player2VictoryCounter + 1
+        player2VictoryCounter = player2VictoryCounter + 1
+
+        player2Victory.textContent = player2VictoryCounter
 
     } else if(document.querySelectorAll('.board>div')[2].style.backgroundImage === secondImage && document.querySelectorAll('.board>div')[5].style.backgroundImage === secondImage && document.querySelectorAll('.board>div')[8].style.backgroundImage === secondImage) {
 
@@ -130,7 +134,9 @@ function gameChecker() {
 
         playerWon = true
 
-        player2Victory.textContent = player2VictoryCounter + 1
+        player2VictoryCounter = player2VictoryCounter + 1
+
+        player2Victory.textContent = player2VictoryCounter
 
     } else if(document.querySelectorAll('.board>div')[0].style.backgroundImage === secondImage && document.querySelectorAll('.board>div')[1].style.backgroundImage === secondImage && document.querySelectorAll('.board>div')[2].style.backgroundImage === secondImage) {
         
@@ -138,7 +144,9 @@ function gameChecker() {
 
         playerWon = true
 
-        player2Victory.textContent = player2VictoryCounter + 1
+        player2VictoryCounter = player2VictoryCounter + 1
+
+        player2Victory.textContent = player2VictoryCounter
 
     } else if(document.querySelectorAll('.board>div')[3].style.backgroundImage === secondImage && document.querySelectorAll('.board>div')[4].style.backgroundImage === secondImage && document.querySelectorAll('.board>div')[5].style.backgroundImage === secondImage) {
 
@@ -146,7 +154,9 @@ function gameChecker() {
 
         playerWon = true
 
-        player2Victory.textContent = player2VictoryCounter + 1
+        player2VictoryCounter = player2VictoryCounter + 1
+
+        player2Victory.textContent = player2VictoryCounter
 
     } else if(document.querySelectorAll('.board>div')[6].style.backgroundImage === secondImage && document.querySelectorAll('.board>div')[7].style.backgroundImage === secondImage && document.querySelectorAll('.board>div')[8].style.backgroundImage === secondImage) {
 
@@ -154,7 +164,9 @@ function gameChecker() {
 
         playerWon = true
 
-        player2Victory.textContent = player2VictoryCounter + 1
+        player2VictoryCounter = player2VictoryCounter + 1
+
+        player2Victory.textContent = player2VictoryCounter
 
     } else if(document.querySelectorAll('.board>div')[0].style.backgroundImage === secondImage && document.querySelectorAll('.board>div')[4].style.backgroundImage === secondImage && document.querySelectorAll('.board>div')[8].style.backgroundImage === secondImage) {
 
@@ -162,15 +174,19 @@ function gameChecker() {
 
         playerWon = true
 
-        player2Victory.textContent = player2VictoryCounter + 1
+        player2VictoryCounter = player2VictoryCounter + 1
+
+        player2Victory.textContent = player2VictoryCounter
 
     } else if(document.querySelectorAll('.board>div')[2].style.backgroundImage === secondImage && document.querySelectorAll('.board>div')[4].style.backgroundImage === secondImage && document.querySelectorAll('.board>div')[6].style.backgroundImage === secondImage) {
 
         winnerDeclaration.textContent = 'Player 2 is the winner'
 
         playerWon = true
+        
+        player2VictoryCounter = player2VictoryCounter + 1
 
-        player2Victory.textContent = player2VictoryCounter + 1
+        player2Victory.textContent = player2VictoryCounter
 
     }
  
@@ -183,7 +199,9 @@ function gameChecker2() {
 
         playerWon = true
 
-        player1Victory.textContent = player1VictoryCounter + 1
+        player1VictoryCounter = player1VictoryCounter +1
+
+        player1Victory.textContent = player1VictoryCounter
 
     } else if (document.querySelectorAll('.board>div')[0].style.backgroundImage === firstImage && document.querySelectorAll('.board>div')[3].style.backgroundImage === firstImage && document.querySelectorAll('.board>div')[6].style.backgroundImage === firstImage) {
 
@@ -191,7 +209,9 @@ function gameChecker2() {
 
         playerWon = true
 
-        player1Victory.textContent = player1VictoryCounter + 1
+        player1VictoryCounter = player1VictoryCounter +1
+
+        player1Victory.textContent = player1VictoryCounter
 
     } else if(document.querySelectorAll('.board>div')[2].style.backgroundImage === firstImage && document.querySelectorAll('.board>div')[5].style.backgroundImage === 
     firstImage && document.querySelectorAll('.board>div')[8].style.backgroundImage === 
@@ -201,7 +221,9 @@ function gameChecker2() {
 
         playerWon = true
 
-        player1Victory.textContent = player1VictoryCounter + 1
+        player1VictoryCounter = player1VictoryCounter +1
+
+        player1Victory.textContent = player1VictoryCounter
 
     } else if(document.querySelectorAll('.board>div')[0].style.backgroundImage === 
     firstImage && document.querySelectorAll('.board>div')[1].style.backgroundImage === 
@@ -212,7 +234,9 @@ function gameChecker2() {
 
         playerWon = true
 
-        player1Victory.textContent = player1VictoryCounter + 1
+        player1VictoryCounter = player1VictoryCounter +1
+
+        player1Victory.textContent = player1VictoryCounter
 
     } else if(document.querySelectorAll('.board>div')[3].style.backgroundImage === 
     firstImage && document.querySelectorAll('.board>div')[4].style.backgroundImage === 
@@ -223,7 +247,9 @@ function gameChecker2() {
 
         playerWon = true
 
-        player1Victory.textContent = player1VictoryCounter + 1
+        player1VictoryCounter = player1VictoryCounter +1
+
+        player1Victory.textContent = player1VictoryCounter
 
     } else if(document.querySelectorAll('.board>div')[6].style.backgroundImage === 
     firstImage && document.querySelectorAll('.board>div')[7].style.backgroundImage === 
@@ -234,7 +260,9 @@ function gameChecker2() {
 
         playerWon = true
 
-        player1Victory.textContent = player1VictoryCounter + 1
+        player1VictoryCounter = player1VictoryCounter +1
+
+        player1Victory.textContent = player1VictoryCounter
 
     } else if(document.querySelectorAll('.board>div')[0].style.backgroundImage === 
     firstImage && document.querySelectorAll('.board>div')[4].style.backgroundImage === 
@@ -245,7 +273,9 @@ function gameChecker2() {
 
         playerWon = true
 
-        player1Victory.textContent = player1VictoryCounter + 1
+        player1VictoryCounter = player1VictoryCounter +1
+
+        player1Victory.textContent = player1VictoryCounter
 
     } else if(document.querySelectorAll('.board>div')[2].style.backgroundImage === 
     firstImage && document.querySelectorAll('.board>div')[4].style.backgroundImage === 
@@ -256,7 +286,9 @@ function gameChecker2() {
 
         playerWon = true
 
-        player1Victory.textContent = player1VictoryCounter + 1
+        player1VictoryCounter = player1VictoryCounter +1
+
+        player1Victory.textContent = player1VictoryCounter
 
     }
 }
