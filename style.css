@@ -139,3 +139,9 @@ img {
 .player-info{ 
     font-family: 'Magra', sans-serif;
 }
+
+
+button {
+    background-color: plum;
+    border-radius: 50%;
+}

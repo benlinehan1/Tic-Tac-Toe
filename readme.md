@@ -20,8 +20,15 @@ The final portion will be cleaning up messy code, adding extras such as css anim
 
 Installation:
 
-To install this code or play the Tic-Tac-Toe game it is as simple as cloning this repository from my GitHub: https://github.com/benlinehan1/Tic-Tac-Toe. There will also be link to play the game that can be found on my GitHub as well.
+To install this code or play the Tic-Tac-Toe game it is as simple as cloning this repository from my GitHub: https://github.com/benlinehan1/Tic-Tac-Toe. There will also be link to play the game that can be found on my GitHub as well. The link to the actual website which anyone can access is: https://benlinehan1.github.io/Tic-Tac-Toe/.
 
 Unsolved problems:
 
-At this stage, I am happy with the progression of this program. However! I would have been even happier if I had found a more succint way to make the victory conditions work. I would have also preferred to have installed some Sound API's that could have added to the gaming experience.
+At this stage, I am happy with the progression of this program. However! I would have been even happier if I had found a more succint way to make the victory conditions work. I would have also preferred to have installed some Sound API's that could have added to the gaming experience. While I have added background music effectively with the ability to pause and unpause it, I would have liked to add sound effects for clicks on the grid. Logistically this could have been problemtic due to clashing with the background music however.
+
+
+The Theme:
+
+The theme of this Tic-Tac-Toe is one of my favourite points in time, the 2000's. More specifically, the 'Gen-z-ification' of the 2000's. I tried my best to make the website alike to one of those old school 2000's websites that were as equally basic as they were 'camp' in their design.
+
+The other over-arching theme would be Girlbosses, I have attached photos and background music to the file of my favourite iconic girlbosses who deserve to be memorialised in my extraordinary Tic-Tac-Toe game.
